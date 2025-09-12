@@ -5,7 +5,7 @@
 @layer base {
   :root {
     /* Global Colors */
-    --global-bg-1: #00d300;
+    --global-bg-1: #08d404;
     --global-bg-2: #ecf5ff;
     --global-bg-3: #eff3fd;
     --global-bg-4: #f5f5f5;
@@ -15,7 +15,7 @@
     
     --global-text-1: #000000;
     --global-text-2: #00a1ff;
-    --global-text-3: #00d300;
+    --global-text-3: #08d404;
     --global-text-4: #142346;
     --global-text-5: #18447d;
     --global-text-6: #191f23;

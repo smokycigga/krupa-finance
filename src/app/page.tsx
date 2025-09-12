@@ -75,19 +75,15 @@ const KrupaFinanceHomepage: React.FC = () => {
   const faqItems = [
     {
       question: "What is Krupa Finance?",
-      answer: "Krupa Finance ensures your peace of mind by securing the foundation of your financial plan. We help you choose the right insurance products so you can rest easy, knowing your future is protected."
+      answer: "Krupa Finance is an advisor specializing in supply chain financing and home loans. It helps businesses and individuals access the right financial solutions with ease and transparency."
     },
     {
       question: "Do I have to pay to speak to a Krupa Finance Advisor?",
-      answer: "Not at all! Your consultation call with a Krupa Finance Advisor is completely free. Once you choose the right policy and decide to proceed with us, the insurance company provides a small commission to us—there's no cost to you."
+      answer: "No, consultations are free — you can book a session with a Krupa Finance advisor at no cost"
     },
     {
-      question: "Will I have a choice of products to select from, or do you offer only a specific policy?",
-      answer: "Krupa Finance Advisors will guide you through various policy options, helping you select the best fit for your needs. At Krupa Finance, we're committed to impartiality, offering a wide range of products without bias toward specific providers, so you can make a confident choice."
-    },
-    {
-      question: "My employer provides health insurance. Should I have a personal insurance plan?",
-      answer: "Employer health insurance is helpful, but it may not cover everything. A personal insurance plan gives you extra coverage for serious illnesses and higher costs. It also protects you if you lose your job or after retirement when employer coverage stops. Having personal insurance ensures you're fully covered."
+      question: "How can I book a consultation with Krupa Finance?",
+      answer: "You can easily schedule a free consultation online or through their support team support@krupafinance.com"
     },
     {
       question: "Would you assist with claims as well?",
@@ -126,7 +122,7 @@ const KrupaFinanceHomepage: React.FC = () => {
                 </h1>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-4">
                   <p className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans font-medium text-global-3">
-                    Business Financing experience
+                    Financing experience
                   </p>
                   <p className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans font-medium text-global-2">
                     like never before
@@ -134,72 +130,75 @@ const KrupaFinanceHomepage: React.FC = () => {
                 </div>
 
                 
-                {/* CTA and Trust Section */}
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6">
-                  <Button
-                    onClick={handleBookCall}
-                    className="bg-global-1 text-global-13 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto"
-                    rightIcon="/images/img_svg_gray_50.svg"
-                  >
-                    Book A Free Call
-                  </Button>
-                  <p className="text-[14px] sm:text-[16px] font-dm-sans text-global-14 text-center sm:text-left">
-                    Trusted by Thousands – here is why
-                  </p>
-                </div>
-
-                {/* Trust Features */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <img 
-                      src="/images/img_svg_white_a700.svg" 
-                      alt="Check" 
-                      className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-                    />
-                    <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-14">
-                      5000+ Families insured
-                    </p>
+                {/* CTA + Trust summary and bullets */}
+                <div className="grid sm:grid-cols-12 gap-6 lg:gap-10 items-start mb-10">
+                  {/* Left: CTA + primary stat */}
+                  <div className="sm:col-span-6 lg:col-span-5 flex flex-col gap-5">
+                    <Button
+                      onClick={handleBookCall}
+                      className="bg-global-1 text-global-13 px-6 sm:px-7 lg:px-8 py-3 sm:py-3.5 lg:py-4 text-base sm:text-lg whitespace-nowrap"
+                      rightIcon="/images/img_svg_gray_50.svg"
+                    >
+                      Book A Free Call
+                    </Button>
+                    <div className="flex items-center gap-3">
+                      <img 
+                        src="/images/img_svg_white_a700.svg" 
+                        alt="Check" 
+                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                      />
+                      <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-14">
+                        5000+ Families insured
+                      </p>
+                    </div>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6">
-                    <div className="flex items-center gap-3">
-                      <img 
-                        src="/images/img_svg_white_a700_20x20.svg" 
-                        alt="Check" 
-                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-                      />
-                      <p className="text-[11px] sm:text-[12px] font-dm-sans text-global-14">
-                        No sales, only advisors
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <img 
-                        src="/images/img_svg_white_a700_20x20.svg" 
-                        alt="Check" 
-                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-                      />
-                      <p className="text-[11px] sm:text-[12px] font-dm-sans text-global-14">
-                        No spams, EVER
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <img 
-                        src="/images/img_svg_white_a700_20x20.svg" 
-                        alt="Check" 
-                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-                      />
-                      <p className="text-[11px] sm:text-[12px] font-dm-sans text-global-14">
-                        24/7 claims support
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <img 
-                        src="/images/img_svg_white_a700_20x20.svg" 
-                        alt="Check" 
-                        className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
-                      />
-                      <p className="text-[11px] sm:text-[12px] font-dm-sans text-global-14">
-                        Unbiased advice
-                      </p>
+
+                  {/* Right: Heading + 4 ticks in 2x2 grid */}
+                  <div className="sm:col-span-6 lg:col-span-7 sm:pt-1 lg:pt-1.5">
+                    <p className="text-[16px] sm:text-[18px] font-dm-sans font-medium text-global-14 mb-4">
+                      Trusted by Thousands – here is why
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 sm:gap-y-5 sm:gap-x-10">
+                      <div className="flex items-start gap-3">
+                        <img 
+                          src="/images/img_svg_white_a700_20x20.svg" 
+                          alt="Check" 
+                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
+                        />
+                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
+                          No sales, only advisors
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <img 
+                          src="/images/img_svg_white_a700_20x20.svg" 
+                          alt="Check" 
+                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
+                        />
+                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
+                          No spams, EVER
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <img 
+                          src="/images/img_svg_white_a700_20x20.svg" 
+                          alt="Check" 
+                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
+                        />
+                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
+                          24/7 claims support
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <img 
+                          src="/images/img_svg_white_a700_20x20.svg" 
+                          alt="Check" 
+                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
+                        />
+                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
+                          Unbiased advice
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -228,65 +227,64 @@ const KrupaFinanceHomepage: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
-              {/* Working Capital Finance */}
-              <div className="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="bg-global-3 rounded-3xl p-2 sm:p-3 flex-shrink-0">
-                    <img 
-                      src="/images/img_background.svg" 
-                      alt="Working Capital Finance" 
-                      className="w-8 h-8 sm:w-11 sm:h-11"
-                    />
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+              {/* Supply Chain Financing */}
+              <div className="group bg-white/95 rounded-xl border border-gray-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-300">
+                <div className="flex items-start gap-4 sm:gap-5">
+                  <div className="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl bg-transparent text-[#08d404] ring-1 ring-[#08d404]/30 group-hover:ring-[#08d404]/50 group-hover:scale-105 transition-transform">
+                    <svg
+                      aria-hidden="true"
+                      className="h-7 w-7 sm:h-8 sm:w-8"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle cx="6" cy="6" r="2" />
+                      <circle cx="18" cy="6" r="2" />
+                      <circle cx="12" cy="18" r="2" />
+                      <path d="M8 6h8" />
+                      <path d="M16 8l-4 8" />
+                      <path d="M8 8l4 8" />
+                    </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-dm-sans font-semibold text-global-8 mb-2 sm:mb-3">
-                      Working Capital Finance
+                    <h3 className="text-[18px] sm:text-[20px] font-dm-sans font-semibold text-gray-900 mb-2">
+                      Supply Chain Financing
                     </h3>
-                    <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-10">
-                      Pillow helps you protect what matters - you and your family.
+                    <p className="text-[13px] sm:text-[14px] font-dm-sans text-gray-600 leading-relaxed">
+                      Unlock working capital and smoothen payables/receivables with financing tailored to your supply chain.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Term Loan Lending */}
-              <div className="bg-white p-6 sm:p-8 rounded-lg shadow-sm">
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="bg-global-3 rounded-3xl p-2 sm:p-3 flex-shrink-0">
-                    <img 
-                      src="/images/img_background_blue_700.svg" 
-                      alt="Term Loan Lending" 
-                      className="w-8 h-8 sm:w-11 sm:h-11"
-                    />
+              {/* Home Loan */}
+              <div className="group bg-white/95 rounded-xl border border-gray-200 p-6 sm:p-8 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-300">
+                <div className="flex items-start gap-4 sm:gap-5">
+                  <div className="relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-2xl bg-transparent text-[#08d404] ring-1 ring-[#08d404]/30 group-hover:ring-[#08d404]/50 group-hover:scale-105 transition-transform">
+                    <svg
+                      aria-hidden="true"
+                      className="h-7 w-7 sm:h-8 sm:w-8"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M3 12l9-7 9 7" />
+                      <path d="M5 10v8a1 1 0 001 1h3v-4a1 1 0 011-1h4a1 1 0 011 1v4h3a1 1 0 001-1v-8" />
+                    </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-dm-sans font-semibold text-global-8 mb-2 sm:mb-3">
-                      Term Loan Lending
+                    <h3 className="text-[18px] sm:text-[20px] font-dm-sans font-semibold text-gray-900 mb-2">
+                      Home Loan
                     </h3>
-                    <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-10">
-                      Pillow helps you secure your family's future.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Home Loans */}
-              <div className="bg-white p-6 sm:p-8 rounded-lg shadow-sm sm:col-span-2 lg:col-span-1">
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="bg-global-3 rounded-3xl p-2 sm:p-3 flex-shrink-0">
-                    <img 
-                      src="/images/img_background_blue_700_01.svg" 
-                      alt="Home Loans" 
-                      className="w-8 h-8 sm:w-11 sm:h-11"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-dm-sans font-semibold text-global-8 mb-2 sm:mb-3">
-                      Home Loans
-                    </h3>
-                    <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-10">
-                      Pillow helps you spot gaps and fix them fast.
+                    <p className="text-[13px] sm:text-[14px] font-dm-sans text-gray-600 leading-relaxed">
+                      Competitive rates and flexible tenures, with guided support from application to disbursal.
                     </p>
                   </div>
                 </div>
@@ -310,7 +308,7 @@ const KrupaFinanceHomepage: React.FC = () => {
       <section className="w-full py-12 sm:py-16 bg-white px-4 sm:px-6">
         <div className="max-w-[1200px] mx-auto">
           <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-dm-sans font-semibold text-global-6 mb-8 sm:mb-12 text-center sm:text-left">
-            Here is how we do it
+            Here's how we do it
           </h2>
 
           {/* Animated Progressive Stepper */}
@@ -379,9 +377,9 @@ const KrupaFinanceHomepage: React.FC = () => {
           {/* Feature Cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="bg-white rounded-lg p-4 sm:p-6">
-              <div className="bg-global-3 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
+              <div className="bg-global-1 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
                 <svg 
-                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-blue-600" 
+                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-white" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -390,7 +388,7 @@ const KrupaFinanceHomepage: React.FC = () => {
                   <path 
                     strokeLinecap="round" 
                     strokeLinejoin="round" 
-                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" 
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" 
                   />
                 </svg>
               </div>
@@ -403,9 +401,9 @@ const KrupaFinanceHomepage: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-lg p-4 sm:p-6">
-              <div className="bg-global-3 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
+              <div className="bg-global-1 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
                 <svg 
-                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-blue-600" 
+                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-white" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -427,20 +425,20 @@ const KrupaFinanceHomepage: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-lg p-4 sm:p-6">
-              <div className="bg-global-3 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
+              <div className="bg-global-1 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
                 <svg 
-                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-blue-600" 
+                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-white" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                 >
+                  <circle cx="12" cy="12" r="9" />
                   <path 
                     strokeLinecap="round" 
                     strokeLinejoin="round" 
-                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" 
+                    d="M12 6v6l4 4" 
                   />
-                  <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
               <h3 className="text-[16px] sm:text-[18px] font-dm-sans font-semibold text-global-7 mb-3 sm:mb-4">
@@ -452,9 +450,9 @@ const KrupaFinanceHomepage: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-lg p-4 sm:p-6">
-              <div className="bg-global-3 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
+              <div className="bg-global-1 rounded-full p-2 sm:p-3 w-fit mb-4 sm:mb-6">
                 <svg 
-                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-blue-600" 
+                  className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px] text-white" 
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -486,52 +484,6 @@ const KrupaFinanceHomepage: React.FC = () => {
       {/* Partners Section */}
       <LogoCloud />
 
-      {/* Benefits Section */}
-      <section className="w-full py-12 sm:py-16 bg-global-5 px-4 sm:px-6">
-        <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-[28px] sm:text-[32px] md:text-[40px] font-dm-sans font-semibold text-global-7 mb-3 sm:mb-4 text-center sm:text-left">
-            Benefits of plans that we curate
-          </h2>
-          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 mb-6 sm:mb-4 text-center sm:text-left">
-            <p className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans text-global-3">
-              We stand by you at every step
-            </p>
-            <p className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans text-global-11">
-              — and select only the best plans for you
-            </p>
-          </div>
-
-          {/* Benefits Stats */}
-          <div className="bg-global-2 border border-blue-300 rounded-lg p-6 sm:p-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 text-center">
-              <div>
-                <p className="text-[32px] sm:text-[36px] md:text-[42px] font-dm-sans font-semibold text-global-5 mb-2">
-                  15,000+
-                </p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px] font-dm-sans text-global-4">
-                  Cashless hospitals
-                </p>
-              </div>
-              <div>
-                <p className="text-[32px] sm:text-[36px] md:text-[42px] font-dm-sans font-semibold text-global-5 mb-2">
-                  24x7
-                </p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px] font-dm-sans text-global-4">
-                  Claims support
-                </p>
-              </div>
-              <div>
-                <p className="text-[32px] sm:text-[36px] md:text-[42px] font-dm-sans font-semibold text-global-5 mb-2">
-                  ₹75,000
-                </p>
-                <p className="text-[16px] sm:text-[18px] md:text-[20px] font-dm-sans text-global-4">
-                  worth of tax saving
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <TestimonialsSection />

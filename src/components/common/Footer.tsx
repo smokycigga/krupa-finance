@@ -19,22 +19,13 @@ const Footer: React.FC = () => {
                     Financing made simple with Krupa Finance
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row justify-end items-center w-full mr-0 sm:mr-[5px] md:mr-[10px]">
-                  <div className="flex flex-col gap-[4px] sm:gap-[6px] md:gap-[8px] justify-start items-center flex-1 mb-4 sm:mb-0">
+                <div className="flex flex-col justify-center items-center w-full">
+                  <div className="flex flex-col gap-[4px] sm:gap-[6px] md:gap-[8px] justify-start items-center">
                     <p className="text-[10px] sm:text-[11px] md:text-[12px] font-dm-sans font-normal leading-[12px] sm:leading-[14px] md:leading-[16px] text-left text-footer-1 w-auto">
                       For Finance Queries:
                     </p>
                     <p className="text-[10px] sm:text-[11px] md:text-[12px] font-dm-sans font-normal leading-[12px] sm:leading-[14px] md:leading-[16px] text-left text-global-6 w-auto">
                       finsupport@Krupacorp.com
-                    </p>
-                  </div>
-                  <div className="w-[1px] h-[14px] sm:h-[21px] md:h-[28px] bg-footer-1 ml-0 sm:ml-[14px] md:ml-[28px] hidden sm:block"></div>
-                  <div className="flex flex-col gap-[4px] sm:gap-[6px] md:gap-[8px] justify-start items-center flex-1 ml-0 sm:ml-[8px] md:ml-[16px]">
-                    <p className="text-[10px] sm:text-[11px] md:text-[12px] font-dm-sans font-normal leading-[12px] sm:leading-[14px] md:leading-[16px] text-left text-footer-1 w-auto">
-                      For claims Queries:
-                    </p>
-                    <p className="text-[10px] sm:text-[11px] md:text-[12px] font-dm-sans font-normal leading-[12px] sm:leading-[14px] md:leading-[16px] text-left text-global-6 w-auto">
-                      claims@pillowinsurance.com
                     </p>
                   </div>
                 </div>
@@ -49,12 +40,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[90%] mt-[3px] sm:mt-[5px] md:mt-[6px]">
             <p className="text-[12px] sm:text-[13px] md:text-[14px] font-dm-sans font-normal leading-[16px] sm:leading-[19px] md:leading-[22px] text-left text-footer-1 w-full lg:w-[50%] self-start lg:self-end mb-4 lg:mb-0">
               Krupa Finance Pvt. Ltd. <br />
-              Door No. 8-21, Krupa House, Beside Gulcose Factory, Perecherla, Guntur, Gnt, AP 522009 IN
+              Corporate Address: 4th Floor, Sailok Complex, 6/1, Arundelpet, Guntur, Andhra Pradesh - 522002
             </p>
             <p className="text-[12px] sm:text-[13px] md:text-[14px] font-dm-sans font-normal leading-[15px] sm:leading-[18px] md:leading-[20px] text-left text-global-6 w-full lg:w-[44%]">
-              Disclaimer : The information provided on this website is for general informational purpose only<br />
-              and does not constitute professional advice. For detailed policy information and terms, please<br />
-              refer to your individual policy document or contact our customer service team.
+              Krupa Finance operates solely as a Direct Selling Agent (DSA) to assist with supply chain financing and home loans. We do not provide investment, wealth management, or securities-related services. All loan approvals and terms are subject to the respective financial institutions' policies.
             </p>
           </div>
         </div>

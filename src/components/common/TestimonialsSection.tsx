@@ -5,49 +5,49 @@ import { TestimonialsColumn, type Testimonial } from "@/components/ui/testimonia
 
 const testimonials: Testimonial[] = [
   {
-    text: "I was looking for a business loan recently and Akshat helped me pick the perfect financing option for my startup. The experience was seamless and the process was incredibly smooth.",
-    name: "Priya Sharma",
-    role: "Startup Founder"
+    text: "I was looking for equipment financing for my construction business and Akshat helped me pick the perfect financing option for my heavy machinery. The experience was seamless and the process was incredibly smooth.",
+    name: "Priya Krishnamurthy",
+    role: "Civil Construction Contractor"
   },
   {
-    text: "Rajesh helped me a lot in securing the right working capital loan and patiently explained all the terms and benefits. He responded to all my queries promptly.",
-    name: "Amit Patel",
-    role: "Manufacturing Business Owner"
+    text: "Rajesh helped me a lot in securing the right working capital loan for my building materials supply business and patiently explained all the terms and benefits. He responded to all my queries promptly.",
+    name: "Venkatesh Reddy",
+    role: "Building Materials Supplier"
   },
   {
     text: "I had been searching for months for a good home loan with competitive rates. Through Krupa Finance, I got connected with the best lenders and secured an excellent deal.",
-    name: "Sneha Gupta",
-    role: "Software Engineer"
+    name: "Lakshmi Iyer",
+    role: "Architect"
   },
   {
-    text: "A big thanks to Vikram! He has been very patient with all my questions about term loans and made the decision-making process much easier for my business expansion.",
-    name: "Rohit Mehta",
-    role: "Retail Business Owner"
+    text: "A big thanks to Vikram! He has been very patient with all my questions about term loans and made the decision-making process much easier for expanding my construction equipment rental business.",
+    name: "Subramaniam Pillai",
+    role: "Construction Equipment Rental Owner"
   },
   {
-    text: "We had been in touch with Kavya for our business financing needs. Being a complex requirement, she handled all the paperwork well and helped us navigate through the complexities.",
-    name: "Deepak Singh",
-    role: "Construction Company Owner"
+    text: "We had been in touch with Kavya for our infrastructure project financing needs. Being a complex requirement, she handled all the paperwork well and helped us navigate through the complexities.",
+    name: "Ravi Chandra",
+    role: "Infrastructure Development Company Owner"
   },
   {
-    text: "The team at Krupa Finance made getting our working capital loan incredibly simple. Their expertise in understanding business needs is remarkable and highly professional.",
-    name: "Anita Joshi",
-    role: "Textile Business Owner"
+    text: "The team at Krupa Finance made getting our working capital loan for our concrete mixing plant incredibly simple. Their expertise in understanding construction business needs is remarkable and highly professional.",
+    name: "Meenakshi Naidu",
+    role: "Ready Mix Concrete Business Owner"
   },
   {
     text: "Excellent service for home loan assistance. The rates they secured for us were much better than what we found elsewhere. Highly recommend their services.",
-    name: "Suresh Kumar",
-    role: "Government Employee"
+    name: "Balakrishnan Nair",
+    role: "Real Estate Developer"
   },
   {
-    text: "They delivered exactly what they promised. The team understood our financing requirements perfectly and connected us with the right lenders for our business growth.",
-    name: "Meera Reddy",
-    role: "Restaurant Owner"
+    text: "They delivered exactly what they promised. The team understood our construction financing requirements perfectly and connected us with the right lenders for our housing project development.",
+    name: "Kavitha Raman",
+    role: "Residential Construction Company Owner"
   },
   {
-    text: "Using Krupa Finance's services, our loan approval process was significantly faster and more efficient. They truly understand the financing landscape in India.",
-    name: "Arjun Nair",
-    role: "Tech Startup Founder"
+    text: "Using Krupa Finance's services, our loan approval process for our steel fabrication unit was significantly faster and more efficient. They truly understand the construction financing landscape in India.",
+    name: "Murugan Subramanian",
+    role: "Steel Fabrication & Construction Owner"
   }
 ];
 
@@ -67,7 +67,7 @@ const TestimonialsSection = () => {
           className="flex flex-col items-center justify-center max-w-[540px] mx-auto mb-12"
         >
           <h2 className="text-[40px] font-dm-sans font-semibold text-global-7 mb-4 text-center">
-            We do not make hollow promises
+            We don't make hollow promises
           </h2>
           <p className="text-[24px] font-dm-sans text-global-11 text-center">
             Here is proof...

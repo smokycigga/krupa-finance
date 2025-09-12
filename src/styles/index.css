@@ -115,19 +115,19 @@ body {
 }
 
 .stepper-indicator.active {
-  background-color: #3b82f6;
-  border-color: #3b82f6;
+  background-color: var(--global-bg-1);
+  border-color: var(--global-bg-1);
   color: white;
   transform: scale(1.05);
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 0 4px rgba(8, 212, 4, 0.2);
 }
 
 .stepper-indicator.completed {
-  background-color: #3b82f6;
-  border-color: #3b82f6;
+  background-color: var(--global-bg-1);
+  border-color: var(--global-bg-1);
   color: white;
   transform: scale(1.1);
-  box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 0 0 6px rgba(8, 212, 4, 0.15);
 }
 
 /* Arrow connector styles */
@@ -154,11 +154,11 @@ body {
 }
 
 .stepper-arrow-line.completed {
-  background-color: #3b82f6;
+  background-color: var(--global-bg-1);
 }
 
 .stepper-arrow-line.completed::after {
-  border-left-color: #3b82f6;
+  border-left-color: var(--global-bg-1);
 }
 
 /* Animation keyframes for stepper */

@@ -100,9 +100,9 @@ const StepperIndicator = React.forwardRef<HTMLDivElement, StepperIndicatorProps>
         className={cn(
           "flex h-10 w-10 items-center justify-center rounded-full border-2 text-sm font-semibold transition-all duration-500 ease-in-out",
           isCompleted
-            ? "border-blue-500 bg-blue-500 text-white transform scale-110"
+            ? "border-global-1 bg-global-1 text-white transform scale-110"
             : isActive
-            ? "border-blue-500 bg-blue-500 text-white transform scale-105"
+            ? "border-global-1 bg-global-1 text-white transform scale-105"
             : "border-gray-300 bg-white text-gray-500 transform scale-100",
           className
         )}
@@ -156,7 +156,7 @@ const StepperSeparator = React.forwardRef<
           <div 
             className={cn(
               "absolute inset-0 h-full transition-all duration-700 ease-in-out",
-              isCompleted ? "w-full bg-blue-500" : "w-0 bg-blue-500"
+              isCompleted ? "w-full bg-global-1" : "w-0 bg-global-1"
             )}
           />
         </div>
@@ -165,7 +165,7 @@ const StepperSeparator = React.forwardRef<
           "absolute right-0 w-0 h-0 transition-all duration-700 ease-in-out",
           "border-l-[8px] border-t-[4px] border-b-[4px]",
           "border-t-transparent border-b-transparent",
-          isCompleted ? "border-l-blue-500" : "border-l-gray-300"
+          isCompleted ? "border-l-global-1" : "border-l-gray-300"
         )} />
       </div>
     </div>
