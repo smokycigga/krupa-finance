@@ -12,7 +12,11 @@ export default function LogoCloud() {
         { src: '/lenders/image copy 5.png', alt: 'Lender 7', height: 56 },
         { src: '/lenders/image copy 6.png', alt: 'Lender 8', height: 56 },
         { src: '/lenders/image copy 7.png', alt: 'Lender 9', height: 56 },
-        { src: '/lenders/image copy 8.png', alt: 'Lender 10', height: 56 }
+        { src: '/lenders/image copy 8.png', alt: 'Lender 10', height: 56 },
+        // Newly added lender logos
+        { src: '/lenders/Logo.webp', alt: 'New Lender 11', height: 56 },
+        { src: '/lenders/lt-logo.webp', alt: 'New Lender 12', height: 56 },
+        { src: '/lenders/oxyzo-logo-new-01.webp', alt: 'New Lender 13', height: 56 }
     ]
 
     return (

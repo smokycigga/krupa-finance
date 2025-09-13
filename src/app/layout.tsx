@@ -7,13 +7,23 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Next.js with Tailwind CSS',
-  description: 'A boilerplate project with Next.js and Tailwind CSS',
+  title: 'Krupa Finance | Supply Chain Financing & Home Loans (DSA)',
+  description: "Krupa Finance is an advisor specializing in supply chain financing and home loans. We operate solely as a Direct Selling Agent (DSA). We do not provide investment, wealth management, or securities-related services. All loan approvals and terms are subject to the respective financial institutions' policies.",
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' }
     ],
   },
+  openGraph: {
+    title: 'Krupa Finance | Supply Chain Financing & Home Loans (DSA)',
+    description: "Krupa Finance is an advisor specializing in supply chain financing and home loans. We operate solely as a Direct Selling Agent (DSA). We do not provide investment, wealth management, or securities-related services. All loan approvals and terms are subject to the respective financial institutions' policies.",
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Krupa Finance | Supply Chain Financing & Home Loans (DSA)',
+    description: "Krupa Finance is an advisor specializing in supply chain financing and home loans. We operate solely as a Direct Selling Agent (DSA). We do not provide investment, wealth management, or securities-related services. All loan approvals and terms are subject to the respective financial institutions' policies."
+  }
 };
 
 

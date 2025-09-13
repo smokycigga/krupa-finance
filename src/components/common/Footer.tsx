@@ -35,11 +35,11 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col gap-[2px] sm:gap-[3px] md:gap-[4px] justify-start items-start w-full px-4 sm:px-8 md:px-16 lg:px-[104px] py-[21px] sm:py-[32px] md:py-[42px] bg-global-6">
           <p className="text-[12px] sm:text-[13px] md:text-[14px] font-dm-sans font-normal leading-[14px] sm:leading-[17px] md:leading-[19px] text-left text-footer-1 w-auto mt-[3px] sm:mt-[5px] md:mt-[6px]">
-            Krupa Finance © 2024-2027. All Rights Reserved..
+            Krupa Corporation Pvt. Ltd. © 2024-2027. All Rights Reserved..
           </p>
           <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[90%] mt-[3px] sm:mt-[5px] md:mt-[6px]">
             <p className="text-[12px] sm:text-[13px] md:text-[14px] font-dm-sans font-normal leading-[16px] sm:leading-[19px] md:leading-[22px] text-left text-footer-1 w-full lg:w-[50%] self-start lg:self-end mb-4 lg:mb-0">
-              Krupa Finance Pvt. Ltd. <br />
+              Krupa Corporation Pvt. Ltd. <br />
               Corporate Address: 4th Floor, Sailok Complex, 6/1, Arundelpet, Guntur, Andhra Pradesh - 522002
             </p>
             <p className="text-[12px] sm:text-[13px] md:text-[14px] font-dm-sans font-normal leading-[15px] sm:leading-[18px] md:leading-[20px] text-left text-global-6 w-full lg:w-[44%]">

@@ -83,11 +83,11 @@ const KrupaFinanceHomepage: React.FC = () => {
     },
     {
       question: "How can I book a consultation with Krupa Finance?",
-      answer: "You can easily schedule a free consultation online or through their support team support@krupafinance.com"
+      answer: "You can easily schedule a free consultation online or through their support team finsupport@krupacorp.com"
     },
     {
-      question: "Would you assist with claims as well?",
-      answer: "Absolutely! Your Krupa Finance advisor is here to support you every step of the way. While we hope you never have to face such situations, if the need arises, we'll be right by your side to ensure your claim is settled smoothly."
+      question: "Do you assist through approval and disbursal?",
+      answer: "Absolutely! Your Krupa Finance advisor is here to support you from application to approval and disbursal. Timelines depend on the lender, but we'll guide you at every step and keep you updated."
     }
   ];
 
@@ -101,20 +101,20 @@ const KrupaFinanceHomepage: React.FC = () => {
         }}
       >
         {/* Header */}
-        <header className="w-full px-4 sm:px-6">
+        <header className="w-full px-4 sm:px-6 py-2 sm:py-3">
           <div className="max-w-[1200px] mx-auto">
             <img 
-              src="/logowhite.png" 
+              src="/images/img_logo.png" 
               alt="Krupa Finance Logo" 
-              className="h-[80px] sm:h-[100px] md:h-[120px] lg:h-[148px] w-auto object-contain"
+              className="h-6 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-auto object-contain pointer-events-none select-none drop-shadow"
             />
           </div>
         </header>
 
         {/* Hero Section */}
-        <section className="w-full px-4 sm:px-6 -mt-4">
+        <section className="w-full px-4 sm:px-6 mt-2 sm:mt-4">
           <div className="max-w-[1200px] mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="flex flex-col order-2 lg:order-1">
                 <h1 className="text-[32px] sm:text-[45px] md:text-[55px] lg:text-[65px] font-dm-sans font-normal leading-tight text-white mb-4 sm:mb-6">
                   The Ultimate<br />
@@ -148,68 +148,49 @@ const KrupaFinanceHomepage: React.FC = () => {
                         className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
                       />
                       <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-14">
-                        5000+ Families insured
+                        5000+ Clients served
                       </p>
                     </div>
                   </div>
 
-                  {/* Right: Heading + 4 ticks in 2x2 grid */}
-                  <div className="sm:col-span-6 lg:col-span-7 sm:pt-1 lg:pt-1.5">
-                    <p className="text-[16px] sm:text-[18px] font-dm-sans font-medium text-global-14 mb-4">
-                      Trusted by Thousands – here is why
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 sm:gap-y-5 sm:gap-x-10">
-                      <div className="flex items-start gap-3">
-                        <img 
-                          src="/images/img_svg_white_a700_20x20.svg" 
-                          alt="Check" 
-                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
-                        />
-                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
-                          No sales, only advisors
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <img 
-                          src="/images/img_svg_white_a700_20x20.svg" 
-                          alt="Check" 
-                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
-                        />
-                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
-                          No spams, EVER
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <img 
-                          src="/images/img_svg_white_a700_20x20.svg" 
-                          alt="Check" 
-                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
-                        />
-                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
-                          24/7 claims support
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <img 
-                          src="/images/img_svg_white_a700_20x20.svg" 
-                          alt="Check" 
-                          className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5"
-                        />
-                        <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">
-                          Unbiased advice
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
               
               <div className="flex justify-center order-1 lg:order-2">
-                <img 
-                  src="/images/banner2.png" 
-                  alt="Professional advisor" 
-                  className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[480px] h-[200px] sm:h-[250px] md:h-[300px] lg:h-[348px] rounded-lg object-cover object-center"
-                />
+                <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-3 sm:p-4 shadow-lg">
+                  <img 
+                    src="/images/man.png" 
+                    alt="Professional advisor" 
+                    className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px] lg:max-w-[560px] xl:max-w-[600px] h-auto rounded-xl object-contain object-center"
+                  />
+                </div>
+              </div>
+
+            </div>
+            {/* Centered trust block across the screen */}
+            <div className="mt-4 sm:mt-6">
+              <div className="w-full flex justify-center">
+                <div className="w-full max-w-[900px] text-center">
+                  <p className="text-[16px] sm:text-[18px] font-dm-sans font-medium text-global-14 mb-3 sm:mb-4">Trusted by Thousands — here’s why</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 justify-items-center">
+                    <div className="flex items-start gap-3 justify-center">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
+                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">No sales, only advisors</p>
+                    </div>
+                    <div className="flex items-start gap-3 justify-center">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
+                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">No spams, EVER</p>
+                    </div>
+                    <div className="flex items-start gap-3 justify-center">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
+                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">End-to-end loan support</p>
+                    </div>
+                    <div className="flex items-start gap-3 justify-center">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
+                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">Unbiased advice</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -255,7 +236,7 @@ const KrupaFinanceHomepage: React.FC = () => {
                       Supply Chain Financing
                     </h3>
                     <p className="text-[13px] sm:text-[14px] font-dm-sans text-gray-600 leading-relaxed">
-                      Unlock working capital and smoothen payables/receivables with financing tailored to your supply chain.
+                      Working capital for invoices, vendors, and purchase orders.
                     </p>
                   </div>
                 </div>
@@ -284,7 +265,7 @@ const KrupaFinanceHomepage: React.FC = () => {
                       Home Loan
                     </h3>
                     <p className="text-[13px] sm:text-[14px] font-dm-sans text-gray-600 leading-relaxed">
-                      Competitive rates and flexible tenures, with guided support from application to disbursal.
+                      Buy, build, or refinance. Balance transfer/top-up available.
                     </p>
                   </div>
                 </div>
@@ -333,26 +314,26 @@ const KrupaFinanceHomepage: React.FC = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <div className="bg-global-7 rounded-2xl p-6 sm:p-8 border border-gray-200">
               <h3 className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans font-semibold text-global-1 mb-3 sm:mb-4">
-                Identify and Recommend
+                Assess & Shortlist
               </h3>
               <p className="text-[14px] sm:text-[16px] font-dm-sans text-global-10">
-                We will have an in-depth conversation with you and recommend the best insurance policy tailored to your needs.
+                Share your need. We check eligibility & docs and shortlist the best lenders.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200">
               <h3 className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans font-semibold text-global-1 mb-3 sm:mb-4">
-                Seamless Assist
+                Prepare & Apply
               </h3>
               <p className="text-[14px] sm:text-[16px] font-dm-sans text-global-10">
-                We will assist you throughout the booking process and clarify any doubts that you may have.
+                We validate docs, structure your file, and apply on your behalf with swift follow-ups.
               </p>
             </div>
             <div className="bg-global-7 rounded-2xl p-6 sm:p-8 border border-gray-200 sm:col-span-2 lg:col-span-1">
               <h3 className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans font-semibold text-global-1 mb-3 sm:mb-4">
-                Optimize
+                Sanction & Disbursal
               </h3>
               <p className="text-[14px] sm:text-[16px] font-dm-sans text-global-10">
-                We provide end-to-end support to ensure smooth claim settlement whenever you need it.
+                We coordinate checks, close terms, and ensure quick disbursal.
               </p>
             </div>
           </div>
@@ -368,8 +349,8 @@ const KrupaFinanceHomepage: React.FC = () => {
             </h2>
             <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
               <p className="text-[18px] sm:text-[20px] md:text-[24px] font-dm-sans text-global-1">
-                Because getting insurance should 
-                <span className="text-global-3"> feel reassuring</span>, not risky
+                Because financing should 
+                <span className="text-global-3"> feel transparent and simple</span>, not stressful
               </p>
             </div>
           </div>
@@ -393,10 +374,10 @@ const KrupaFinanceHomepage: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-[16px] sm:text-[18px] font-dm-sans font-semibold text-global-7 mb-3 sm:mb-4">
-                Get Insurance that fits your life
+                Tailored to your needs
               </h3>
               <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-11">
-                We understand your needs are unique, and so should your insurance plan be.
+                Solutions matched to your profile and goals.
               </p>
             </div>
 
@@ -417,10 +398,10 @@ const KrupaFinanceHomepage: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-[16px] sm:text-[18px] font-dm-sans font-semibold text-global-7 mb-3 sm:mb-4">
-                We fight for your claims, so you do not have to
+                Multiple lenders, one partner
               </h3>
               <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-11">
-                No delays and no runarounds. We do not rest until you get what is rightfully yours.
+                We compare banks/NBFCs and negotiate terms.
               </p>
             </div>
 
@@ -442,10 +423,10 @@ const KrupaFinanceHomepage: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-[16px] sm:text-[18px] font-dm-sans font-semibold text-global-7 mb-3 sm:mb-4">
-                Support that never sleeps so you can
+                Faster approvals, guided by experts
               </h3>
               <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-11">
-                Because your concerns do not follow a schedule—neither does our support.
+                Expert coordination from application to disbursal.
               </p>
             </div>
 
@@ -471,10 +452,10 @@ const KrupaFinanceHomepage: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-[16px] sm:text-[18px] font-dm-sans font-semibold text-global-7 mb-3 sm:mb-4">
-                100% Transparency guaranteed
+                Transparent and compliant
               </h3>
               <p className="text-[12px] sm:text-[14px] font-dm-sans text-global-11">
-                We do not believe in fine print. We will make sure you understand your policy before applying.
+                Clear fees and lender policies. We operate solely as a DSA.
               </p>
             </div>
           </div>
