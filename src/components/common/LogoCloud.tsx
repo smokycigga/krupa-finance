@@ -3,20 +3,15 @@ import { ProgressiveBlur } from '@/components/motion-primitives/progressive-blur
 
 export default function LogoCloud() {
     const lenderLogos = [
-        { src: '/lenders/image.png', alt: 'Lender 1', height: 56 },
-        { src: '/lenders/image2.png', alt: 'Lender 2', height: 56 },
-        { src: '/lenders/image copy.png', alt: 'Lender 3', height: 56 },
-        { src: '/lenders/image copy 2.png', alt: 'Lender 4', height: 56 },
-        { src: '/lenders/image copy 3.png', alt: 'Lender 5', height: 56 },
-        { src: '/lenders/image copy 4.png', alt: 'Lender 6', height: 56 },
-        { src: '/lenders/image copy 5.png', alt: 'Lender 7', height: 56 },
-        { src: '/lenders/image copy 6.png', alt: 'Lender 8', height: 56 },
-        { src: '/lenders/image copy 7.png', alt: 'Lender 9', height: 56 },
-        { src: '/lenders/image copy 8.png', alt: 'Lender 10', height: 56 },
-        // Newly added lender logos
-        { src: '/lenders/Logo.webp', alt: 'New Lender 11', height: 56 },
-        { src: '/lenders/lt-logo.webp', alt: 'New Lender 12', height: 56 },
-        { src: '/lenders/oxyzo-logo-new-01.webp', alt: 'New Lender 13', height: 56 }
+        { src: '/lenders/sbi-logo.jpg', alt: 'State Bank of India', height: 56 },
+        { src: '/lenders/union-bank-of-india-home-loan-service-500x500.jpeg', alt: 'Union Bank of India', height: 56 },
+        { src: '/lenders/Logo.webp', alt: 'Partner Bank', height: 56 },
+        { src: '/lenders/lt-logo.webp', alt: 'LT Finance', height: 56 },
+        { src: '/lenders/oxyzo-logo-new-01.webp', alt: 'Oxyzo', height: 56 },
+        { src: '/lenders/image.png', alt: 'Banking Partner', height: 56 },
+        { src: '/lenders/image copy.png', alt: 'NBFC Partner', height: 56 },
+        { src: '/lenders/image copy 7.png', alt: 'Finance Company', height: 56 },
+        { src: '/lenders/image copy 8.png', alt: 'Lending Institution', height: 56 }
     ]
 
     return (
