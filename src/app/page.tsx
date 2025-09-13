@@ -104,9 +104,9 @@ const KrupaFinanceHomepage: React.FC = () => {
         <header className="w-full px-4 sm:px-6 py-2 sm:py-3">
           <div className="max-w-[1200px] mx-auto">
             <img 
-              src="/images/img_logo.png" 
+              src="/logo2.PNG" 
               alt="Krupa Finance Logo" 
-              className="h-6 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-auto object-contain pointer-events-none select-none drop-shadow"
+              className="h-8 sm:h-10 md:h-12 lg:h-16 xl:h-20 2xl:h-24 w-auto object-contain pointer-events-none select-none drop-shadow"
             />
           </div>
         </header>
@@ -168,26 +168,27 @@ const KrupaFinanceHomepage: React.FC = () => {
 
             </div>
             {/* Centered trust block across the screen */}
-            <div className="mt-4 sm:mt-6">
+            <div className="mt-6 sm:mt-8 lg:mt-10">
               <div className="w-full flex justify-center">
-                <div className="w-full max-w-[900px] text-center">
-                  <p className="text-[16px] sm:text-[18px] font-dm-sans font-medium text-global-14 mb-3 sm:mb-4">Trusted by Thousands — here’s why</p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 justify-items-center">
-                    <div className="flex items-start gap-3 justify-center">
-                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
-                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">No sales, only advisors</p>
+                <div className="w-full max-w-[1000px] text-center px-2 sm:px-4 trusted-section-mobile">
+                  <p className="text-[16px] sm:text-[19px] lg:text-[20px] font-dm-sans font-medium text-global-14 mb-4 sm:mb-5 lg:mb-6">Trusted by Thousands — here's why</p>
+                  {/* Mobile-first responsive grid: single column on very small screens, 2 columns from sm up, 4 columns on large screens */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-5 place-items-start lg:place-items-center">
+                    <div className="flex items-center gap-3 justify-start trusted-item py-2 sm:py-0 w-full">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-5 h-5 flex-shrink-0" />
+                      <span className="text-[14px] sm:text-[15px] lg:text-[14px] font-dm-sans text-global-14 text-left lg:text-center leading-relaxed">No sales, only advisors</span>
                     </div>
-                    <div className="flex items-start gap-3 justify-center">
-                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
-                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">No spams, EVER</p>
+                    <div className="flex items-center gap-3 justify-start trusted-item py-2 sm:py-0 w-full">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-5 h-5 flex-shrink-0" />
+                      <span className="text-[14px] sm:text-[15px] lg:text-[14px] font-dm-sans text-global-14 text-left lg:text-center leading-relaxed">No spams, EVER</span>
                     </div>
-                    <div className="flex items-start gap-3 justify-center">
-                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
-                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">End-to-end loan support</p>
+                    <div className="flex items-center gap-3 justify-start trusted-item py-2 sm:py-0 w-full">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-5 h-5 flex-shrink-0" />
+                      <span className="text-[14px] sm:text-[15px] lg:text-[14px] font-dm-sans text-global-14 text-left lg:text-center leading-relaxed">End-to-end loan support</span>
                     </div>
-                    <div className="flex items-start gap-3 justify-center">
-                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5" />
-                      <p className="text-[13px] sm:text-[14px] font-dm-sans text-global-14">Unbiased advice</p>
+                    <div className="flex items-center gap-3 justify-start trusted-item py-2 sm:py-0 w-full">
+                      <img src="/images/img_svg_white_a700_20x20.svg" alt="Check" className="w-5 h-5 flex-shrink-0" />
+                      <span className="text-[14px] sm:text-[15px] lg:text-[14px] font-dm-sans text-global-14 text-left lg:text-center leading-relaxed">Unbiased advice</span>
                     </div>
                   </div>
                 </div>

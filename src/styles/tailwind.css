@@ -64,6 +64,23 @@
   .bg-footer-1 { background-color: var(--footer-bg-1); }
   .text-footer-1 { color: var(--footer-text-1); }
   
+  /* Mobile Responsive Utilities for Trusted Section */
+  @media (max-width: 360px) {
+    .trusted-section-mobile .trusted-item {
+      padding: 0.75rem 0;
+    }
+    .trusted-section-mobile .trusted-item p {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  }
+  
+  @media (min-width: 361px) and (max-width: 480px) {
+    .trusted-section-mobile .trusted-item {
+      padding: 0.875rem 0;
+    }
+  }
+  
   /* Decorative Elements */
   .decorative-underline {
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
