@@ -7,8 +7,7 @@ export default function LogoCloud() {
         { src: '/lenders/union-bank-of-india-home-loan-service-500x500.jpeg', alt: 'Union Bank of India', height: 56 },
         { src: '/lenders/lt-logo.webp', alt: 'LT Finance', height: 56 },
         { src: '/lenders/oxyzo-logo-new-01.webp', alt: 'Oxyzo', height: 56 },
-        { src: '/lenders/Logo.webp', alt: 'Banking Partner', height: 56 },
-        { src: '/lenders/image copy 7.png', alt: 'Finance Company', height: 56 }
+        { src: '/lenders/Logo.webp', alt: 'Banking Partner', height: 56 }
     ]
 
     return (
