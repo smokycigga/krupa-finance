@@ -8,10 +8,7 @@ export default function LogoCloud() {
         { src: '/lenders/lt-logo.webp', alt: 'LT Finance', height: 56 },
         { src: '/lenders/oxyzo-logo-new-01.webp', alt: 'Oxyzo', height: 56 },
         { src: '/lenders/Logo.webp', alt: 'Banking Partner', height: 56 },
-        { src: '/lenders/image.png', alt: 'Financial Institution', height: 56 },
-        { src: '/lenders/image copy.png', alt: 'NBFC Partner', height: 56 },
-        { src: '/lenders/image copy 7.png', alt: 'Finance Company', height: 56 },
-        { src: '/lenders/image copy 8.png', alt: 'Lending Institution', height: 56 }
+        { src: '/lenders/image copy 7.png', alt: 'Finance Company', height: 56 }
     ]
 
     return (
