@@ -106,7 +106,7 @@ const KrupaFinanceHomepage: React.FC = () => {
             <img 
               src="/logo2.PNG" 
               alt="Krupa Finance Logo" 
-              className="h-12 sm:h-16 md:h-20 lg:h-24 xl:h-28 2xl:h-32 w-auto object-contain pointer-events-none select-none drop-shadow"
+              className="h-20 sm:h-24 md:h-28 lg:h-24 xl:h-28 2xl:h-32 w-auto object-contain pointer-events-none select-none drop-shadow"
             />
           </div>
         </header>
